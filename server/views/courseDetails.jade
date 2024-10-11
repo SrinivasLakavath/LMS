@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 doctype html 
+=======
+doctype html
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -8,12 +12,17 @@ html
     .navbar.navbar-light
       .container
         .navbar-header
+<<<<<<< HEAD
           a.navbar-brand(href='/') Home
+=======
+          a.navbar-brand(href='/') Course Recommendation System
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
         .navbar-nav
           li.nav-item
             a.nav-link(href='/courses') Courses
           li.nav-item
             a.nav-link(href='/about') About Us
+<<<<<<< HEAD
 
     .container
       .course-details-container(style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px;")
@@ -26,10 +35,22 @@ html
           p.course-prerequisites Prerequisites: #{course.prerequisites || 'None'}
           p.course-description= course.description
           
+=======
+          li.nav-item
+            a.nav-link(href='/reviews') Reviews
+
+    .container
+      .course-details-box
+        .course-info
+          h1.course-title= course.title
+          p.course-provider Provider: #{course.provider}
+          p.course-description= course.description
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
           .course-details
             p.course-duration Duration: #{course.duration}
             p.course-rating Rating: #{course.rating} ★
 
+<<<<<<< HEAD
             if course.syllabus && course.syllabus.length > 0
               .course-syllabus
                 h3 Syllabus
@@ -64,23 +85,52 @@ html
                     span ★
                   else
                     span ☆
+=======
+        .video-box
+          .video-thumbnail
+            a(href=course.link, target='_blank')
+              //- img.img-fuild.rounded(src=course.linkimg, alt='Course Video Thumbnail')
+              img.img-fuild.rounded(src="../sample", alt='Course Video Thumbnail')
+              //- .video-overlay Watch Video ▶
+
+      .reviews-section
+        h3 Reviews
+        if course.reviews.length
+          each review in course.reviews
+            .review
+              h4.review-author= review.author
+              p.review-text= review.reviewText
+              p.review-rating Rating: #{review.rating} ★
+              p.review-date Date: #{review.timestamp.toDateString()} // format date for clarity
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
         else
           p No reviews yet. Be the first to leave a review!
 
         .add-review-form
           h3 Add a Review
+<<<<<<< HEAD
           form(action=`/courses/${course._id}/reviews`, method="POST")
+=======
+          form(action=`/courses/${course._id}/reviews`, method='POST')
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
             .form-group
               label(for='author') Author
               input#author(type='text', name='author', required)
             .form-group
               label(for='rating') Rating
               input#rating(type='number', name='rating', min='1', max='5', required)
+<<<<<<< HEAD
 
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
             .form-group
               label(for='reviewText') Review
               textarea#reviewText(name='reviewText', required)
             button.btn-submit(type='submit') Submit Review
 
     footer
+<<<<<<< HEAD
       p.footer-text &copy; 2024 Last Minute Learners
+=======
+      p &copy; 2024 Course Recommendation System
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3

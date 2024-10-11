@@ -3,6 +3,7 @@
 // /api/models/course.js 
 var mongoose = require("mongoose");
 
+<<<<<<< HEAD
 var reviewSchema = new mongoose.Schema({
   author: {
     type: String,
@@ -25,6 +26,8 @@ var reviewSchema = new mongoose.Schema({
 
   }
 });
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 var courseSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -38,6 +41,7 @@ var courseSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+<<<<<<< HEAD
   // Duration of the course
   rating: {
     type: Number,
@@ -46,20 +50,36 @@ var courseSchema = new mongoose.Schema({
     max: 5
   },
   // Course rating
+=======
+  // New field
+  rating: {
+    type: Number,
+    required: true
+  },
+  // New field
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
   provider: {
     type: String,
     required: true
   },
+<<<<<<< HEAD
   // Course provider
+=======
+  // New field
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
   link: {
     type: String,
     required: true
   },
+<<<<<<< HEAD
   // Link to the course
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
   linkimg: {
     type: String,
     required: false
   },
+<<<<<<< HEAD
   // Link to course image
   prerequisites: {
     type: String,
@@ -85,6 +105,27 @@ var courseSchema = new mongoose.Schema({
   // Course level
   reviews: [reviewSchema] // Array of reviews
 
+=======
+  // New field for course link
+  reviews: [{
+    author: {
+      type: String,
+      required: true
+    },
+    rating: {
+      type: Number,
+      required: true
+    },
+    reviewText: {
+      type: String,
+      required: true
+    },
+    timestamp: {
+      type: Date,
+      "default": Date.now
+    }
+  }]
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 });
 var Course = mongoose.model("Course", courseSchema);
 module.exports = Course;

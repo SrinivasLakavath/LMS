@@ -7,12 +7,17 @@ html
     .navbar.navbar-light
       .container
         .navbar-header
+<<<<<<< HEAD
           a.navbar-brand(href='/') Home
+=======
+          a.navbar-brand(href='/') Course Recommendation System
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
         .navbar-nav
           li.nav-item
             a.nav-link(href='/courses') Courses
           li.nav-item
             a.nav-link(href='/about') About Us
+<<<<<<< HEAD
 
     .banner
       h1.banner-title Available Courses
@@ -34,3 +39,25 @@ html
           
     footer
       p.footer-text &copy; 2024 Last Minute Learners
+=======
+          li.nav-item
+            a.nav-link(href='/reviews') Reviews
+
+    .banner
+      h1 Available Courses
+      p Browse our list of courses to enhance your skills.
+
+    .course-container
+      each course in courses
+        .course-card
+          .card-header
+            h3.card-title= course.title
+            p.card-provider Provided by: #{course.provider}
+          .card-body
+            p.card-duration= course.duration
+            p.card-rating Rating: #{course.rating} ★
+            a.btn.btn-primary(href=`/courses/${course._id}`) View Course
+          
+    footer
+      p &copy; 2024 Course Recommendation System
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3

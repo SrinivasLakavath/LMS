@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Import the required fonts */
 @import url('https://fonts.googleapis.com/css2?family=Euclid+Circular+A:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap');
@@ -5,6 +6,11 @@
 /* Base Styles */
 body {
   font-family: 'MongoDB Value Serif','Euclid Circular A', sans-serif;
+=======
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
   margin: 0;
   padding: 0;
   background-color: #EEF0F2; /* Light background for contrast */
@@ -15,7 +21,10 @@ body {
 }
 
 h1, h2, h3, h4 {
+<<<<<<< HEAD
   font-family: 'MongoDB Value Serif', 'Euclid Circular A', sans-serif;
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
   color: #444B6E; /* Medium blue for headings */
 }
 
@@ -34,11 +43,23 @@ a:hover {
   padding: 10px 20px; /* Padding for navbar */
 }
 
+<<<<<<< HEAD
 .navbar .navbar-brand {
   color: #EEF0F2; /* Light color for navbar brand */
   font-size: 24px;
   font-weight: bold;
   justify-content: flex-end;
+=======
+
+.navbar .navbar-brand {
+  color: #EEF0F2; /* Light color for navbar brand */
+  font-size: 24px;
+  margin-right: auto; /* Pushes the brand to the left */
+}
+
+.navbar-header {
+  flex-direction: column;
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 }
 
 .navbar-nav {
@@ -50,6 +71,10 @@ a:hover {
   margin-left: 20px; /* Space between nav items */
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 .nav-link {
   color: #EEF0F2; /* Light color for nav links */
   font-weight: bold;
@@ -72,7 +97,10 @@ a:hover {
   color: #444B6E;
   margin-top: 10px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 /* Section Styles */
 .section {
   padding: 40px 20px;
@@ -92,48 +120,93 @@ a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   width: calc(50% - 20px); /* Responsive width for two side-by-side cards */
   margin: 8px; /* Margin between cards */
+<<<<<<< HEAD
 }
 
+=======
+  flex: 1; /* Ensure it takes equal space */
+}
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 .cta-box:hover {
   transform: scale(1.02); /* Scale effect on hover */
 }
 
+<<<<<<< HEAD
 /* Course List Styles */
 .course-container {
   display: grid; /* Use grid layout for courses */
   grid-template-columns: repeat(4, 1fr); /* Four columns for course cards */
   gap: 20px; /* Space between cards */
   padding: 20px;
+=======
+/* Course Card Styles */
+/* Course List Styles */
+.course-container {
+  display: grid; /* Use grid layout for courses */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  justify-content: center;
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 }
 
 /* Course Card Styles */
 .course-card {
+<<<<<<< HEAD
   background-color: #E0F2F1;
   border: 1px solid #444B6E;
   border-radius: 8px;
+=======
+  background-color: #FFF;
+  border: 1px solid #444B6E;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 }
 
 .course-card:hover {
+<<<<<<< HEAD
   transform: scale(1.02); /* Scale effect on hover */
 }
 
 .card-header {
+=======
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card-header { 
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
   background-color: #444B6E;
   color: #EEF0F2;
   padding: 15px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 }
 
 .card-title {
   font-size: 20px;
+<<<<<<< HEAD
   font-weight: bold;
   margin: 0;
 }
 
+=======
+  margin: 0;
+}
+
+.course-container .course-card .card-header .card-title {
+  color: #ffffff; 
+}
+
+
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 .card-provider {
   font-size: 14px;
 }
@@ -151,12 +224,15 @@ a:hover {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* Star Styles */
 .star {
   color: gold; /* Set star color to gold */
   font-size: 1.5em; /* Adjust size as needed */
 }
 
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 /* Footer Styles */
 footer {
   background-color: #3D315B; /* Dark footer */
@@ -169,7 +245,10 @@ footer {
 .footer-text {
   margin: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 /* Additional Styles for Course Details Page */
 
 /* Course Detail Header */
@@ -191,6 +270,7 @@ footer {
   margin-bottom: 20px; /* Space below course info */
 }
 
+<<<<<<< HEAD
 /* Video Thumbnail Styles */
 .video-thumbnail {
   display: flex; /* Enable flexbox for alignment */
@@ -406,3 +486,84 @@ p.helpful-summary {
 
 
 
+=======
+/* Course Link Button */
+.course-link {
+  background-color: #FF0000; /* Red background for course link */
+  color: #FFF; /* White text */
+  padding: 10px 20px; /* Padding for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block for centering */
+  margin-top: 15px; /* Space above button */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.course-link:hover {
+  background-color: #C40000; /* Darker red on hover */
+}
+
+/* Review Section Styles */
+.review-section {
+  margin-top: 30px; /* Space above reviews */
+}
+
+.review-header {
+  font-weight: bold; /* Bold for review header */
+  font-size: 1.5em; /* Larger font for header */
+  margin-bottom: 15px; /* Space below header */
+}
+
+.review-card {
+  background-color: #EEF0F2; /* Light background for review card */
+  border: 1px solid #444B6E; /* Border for review card */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside review card */
+  margin-bottom: 10px; /* Space below each review */
+}
+
+/* Video Box Styles */
+.video-box {
+  position: relative; /* Create a positioning context for the overlay */
+}
+
+.video-thumbnail img {
+  width: 100%; /* Ensure the image takes the full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.video-overlay {
+  position: absolute; /* Position overlay on top of the image */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset for centering */
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px; /* Padding for the overlay */
+  border-radius: 5px; /* Rounded corners for the overlay */
+  display: flex; /* Flex to center text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.video-thumbnail:hover .video-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Review Text */
+.review-text {
+  font-size: 14px; /* Font size for review text */
+  color: #444B6E; /* Medium blue for text */
+  margin-top: 5px; /* Space above review text */
+}
+
+/* Review Rating */
+.review-rating {
+  color: #FFB74D; /* Color for rating */
+  font-weight: bold; /* Bold for rating */
+}
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3

@@ -1,6 +1,7 @@
 // /api/controllers/apiCoursesController.js
 const Course = require("../models/course");
 
+<<<<<<< HEAD
 // Function to get all courses
 const getCourses = async (req, res) => {
   try {
@@ -12,12 +13,24 @@ const getCourses = async (req, res) => {
 };
 
 // Function to get a course by its ID
+=======
+const getCourses = async (req, res) => {
+  try {
+    const courses = await Course.find().exec();
+    res.json(courses);
+  } catch (error) {
+    res.status(500).json({ message: "Error retrieving courses: " + error });
+  }
+};
+
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 const getCourseById = async (req, res) => {
   const courseId = req.params.id;
 
   try {
     const course = await Course.findById(courseId).exec();
     if (!course) {
+<<<<<<< HEAD
       return res.status(404).send("Course not found");
     }
     res.send(course); // Using .send() as per your preference
@@ -60,4 +73,17 @@ module.exports = {
   getCourses,
   getCourseById,
   addReview, // New function added here
+=======
+      return res.status(404).json({ message: "Course not found" });
+    }
+    res.json(course);
+  } catch (error) {
+    res.status(500).json({ message: "Error retrieving course: " + error });
+  }
+};
+
+module.exports = {
+  getCourses,
+  getCourseById,
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 };

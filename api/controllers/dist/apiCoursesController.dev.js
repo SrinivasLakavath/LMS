@@ -1,8 +1,12 @@
 "use strict";
 
 // /api/controllers/apiCoursesController.js
+<<<<<<< HEAD
 var Course = require("../models/course"); // Function to get all courses
 
+=======
+var Course = require("../models/course");
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 
 var getCourses = function getCourses(req, res) {
   var courses;
@@ -16,15 +20,25 @@ var getCourses = function getCourses(req, res) {
 
         case 3:
           courses = _context.sent;
+<<<<<<< HEAD
           res.send(courses); // Using .send() as per your preference
 
+=======
+          res.json(courses);
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
           _context.next = 10;
           break;
 
         case 7:
           _context.prev = 7;
           _context.t0 = _context["catch"](0);
+<<<<<<< HEAD
           res.status(500).send("Error retrieving courses: " + _context.t0);
+=======
+          res.status(500).json({
+            message: "Error retrieving courses: " + _context.t0
+          });
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 
         case 10:
         case "end":
@@ -32,8 +46,12 @@ var getCourses = function getCourses(req, res) {
       }
     }
   }, null, null, [[0, 7]]);
+<<<<<<< HEAD
 }; // Function to get a course by its ID
 
+=======
+};
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 
 var getCourseById = function getCourseById(req, res) {
   var courseId, course;
@@ -54,18 +72,33 @@ var getCourseById = function getCourseById(req, res) {
             break;
           }
 
+<<<<<<< HEAD
           return _context2.abrupt("return", res.status(404).send("Course not found"));
 
         case 7:
           res.send(course); // Using .send() as per your preference
 
+=======
+          return _context2.abrupt("return", res.status(404).json({
+            message: "Course not found"
+          }));
+
+        case 7:
+          res.json(course);
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
           _context2.next = 13;
           break;
 
         case 10:
           _context2.prev = 10;
           _context2.t0 = _context2["catch"](1);
+<<<<<<< HEAD
           res.status(500).send("Error retrieving course: " + _context2.t0);
+=======
+          res.status(500).json({
+            message: "Error retrieving course: " + _context2.t0
+          });
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 
         case 13:
         case "end":
@@ -73,6 +106,7 @@ var getCourseById = function getCourseById(req, res) {
       }
     }
   }, null, null, [[1, 10]]);
+<<<<<<< HEAD
 }; // Function to add a review to a specific course
 
 
@@ -137,5 +171,12 @@ module.exports = {
   getCourseById: getCourseById,
   addReview: addReview // New function added here
 
+=======
+};
+
+module.exports = {
+  getCourses: getCourses,
+  getCourseById: getCourseById
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 };
 //# sourceMappingURL=apiCoursesController.dev.js.map
