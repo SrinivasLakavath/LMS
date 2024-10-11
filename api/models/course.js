@@ -2,6 +2,7 @@
 const mongoose = require("mongoose");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const reviewSchema = new mongoose.Schema({
   author: { 
     type: String, 
@@ -36,6 +37,8 @@ const courseSchema = new mongoose.Schema({
   level: { type: String, enum: ['Beginner', 'Intermediate', 'Advanced'], required: true }, // Course level
   reviews: [reviewSchema] // Array of reviews
 =======
+=======
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 const courseSchema = new mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
@@ -52,6 +55,9 @@ const courseSchema = new mongoose.Schema({
       timestamp: { type: Date, default: Date.now }
     }
   ]
+<<<<<<< HEAD
+>>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
+=======
 >>>>>>> baea0f805be43cb9f0d18de0157714dbb01214b3
 });
 
